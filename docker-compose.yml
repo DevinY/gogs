@@ -8,7 +8,6 @@ services:
     # 使用隨機的port 80
     - "10080:3000"
     - "10022:22"
-    - "127.0.0.1:3306:3306"
   volumes:
     - ./git:/data/git
     - ./etc/app.ini:/data/gogs/conf/app.ini
