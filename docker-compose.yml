@@ -1,0 +1,36 @@
+version: '3'
+services:
+### 網頁伺服器的container ##################################
+ web:
+  image: gogs/gogs
+  dns: 8.8.8.8
+  ports:
+    # 使用隨機的port 80
+    - "10080:3000"
+    - "10022:22"
+    - "127.0.0.1:3306:3306"
+  volumes:
+    - ./git:/data/git
+    - ./etc/app.ini:/data/gogs/conf/app.ini
+    - ./app/gogs:/app/gogs
+  hostname: gogs
+  networks:
+    - dlaravel_net
+  
+### 資料庫 container ##################################
+ db:
+  image: mysql:5.7.19
+  network_mode: "service:web"
+  volumes:
+    - ./data:/var/lib/mysql
+  environment:
+   - MYSQL_DATABASE=gogs
+   - MYSQL_USER=gogs
+   - MYSQL_PASSWORD=gogs
+   #- MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD-secret}
+   - MYSQL_ALLOW_EMPTY_PASSWORD= "yes"
+   - TZ=Asia/Taipei
+
+######top-level netowks key#######
+networks:
+    dlaravel_net:
