@@ -12,7 +12,6 @@ services:
   volumes:
     - ./git:/data/git
     - ./etc/app.ini:/data/gogs/conf/app.ini
-    - ./app/gogs:/app/gogs
   hostname: gogs
   networks:
     - dlaravel_net
