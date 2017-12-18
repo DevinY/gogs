@@ -58,7 +58,7 @@ https://gogs.io/docs/advanced/configuration_cheat_sheet
 
 我的DB contianer預設root無密碼，需要碼，請於第一次啟動時可在docker-compose.yml檔設定。
 
-或是啟動後要設定mysql root密碼，可進入db的container內的mysql指令進行設定。
+或是啟動後再進入db的container內的mysql進行調整，進入指令如下:。
 <pre>
 docker-compose exec db mysql
 </pre>
