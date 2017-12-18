@@ -8,13 +8,12 @@
 
 ## 目錄結構
 <pre>
-/app/gitea/gitea (gitea程式)
 
 /etc/app.ini (環境設定)
 
 /data  (mysql資料庫)
 
-/repository (git倉庫)
+/git (git倉庫及authorized_keys公鑰設定)
 </pre>
 
 ## 關於Linux環境
