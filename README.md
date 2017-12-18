@@ -2,7 +2,7 @@
 
 這個repo提供了一個簡易的方式快速啟動gogs服務，並且規劃好了需要掛載的目錄及資料庫設定。
 
-資料庫及gogs完全使用官方的image為樣版，來產container，您可檢示docker-compose.yml設定檔。
+資料庫及gogs完全使用官方的image樣版來產container，您可檢示docker-compose.yml設定檔。
 
 開箱即用(ootb)。
 
