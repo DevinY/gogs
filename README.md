@@ -65,5 +65,5 @@ docker-compose exec db mysql
 
 
 
-如果要自行編譯image，到至
+如果要自行編譯gogs image官網，請至
 https://github.com/go-gitea/gitea
