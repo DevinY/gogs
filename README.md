@@ -11,7 +11,7 @@
 
 /etc/app.ini (環境設定)
 
-/data  (mysql資料庫)
+/data  (mysql資料庫-第一次啟動後生成)
 
 /git (git倉庫及authorized_keys公鑰設定)
 </pre>
