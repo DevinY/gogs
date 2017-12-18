@@ -27,8 +27,7 @@ container執行的使用者uid為1000，如果不是請自行調整了，這裡�
 docker-compose up -d
 </pre>
 
-在Synlogy Nas您可能需要手動建立data的資料夾後，再執行一次docker-compose up -d，
-在我的MacOs不需要，可正常產生。
+在Synlogy Nas您可能需要手動建立data的資料夾後，再執行一次docker-compose up -d即可。
 
 #### 二、可執行如下命令，確認logs狀態，啟動完成後，再進入第三步
 <pre>
